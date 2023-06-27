@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper-pagination {
+    @apply flex justify-center items-center gap-1;
+    .bullet {
+        display: inline-block;
+        width: 20px;
+        height: 5px;
+        border-radius: 100px;
+
+        /**
+        * !Undefined-Color
+        */
+        background-color: #d9d9d9;
+        transition: all 0.2s;
+        &.is-active {
+            @apply bg-main;
+            width: 40px;
+        }
+    }
+    .bullet:hover {
+        cursor: pointer;
+    }
+}
+
+
+//progressbar
+
+.swiper-pagination-progressbar {
+    background-color: rgba(0, 0, 0, 0.25);
+    width: 100%;
+    height: 5px;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background-color: rgb(249, 115, 22);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 5px;
+    transform: scale(0);
+    transform-origin: left top;
+  }
+
+.navbtn-enter-active,
+.navbtn-leave-active {
+    transition: all 0.5s;
+}
+
+.navbtn-enter-from,
+.navbtn-leave-to {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+
+// .nav-enter-active,
+// .nav-leave-active {
+//     transition: all 0.5s;
+// }
+
+// .nav-enter-from,
+// .nav-leave-to {
+//     opacity: 0;
+//     transform: translateY(0px);
+// }
+
+.nav-enter-active,
+.nav-leave-active {
+    transition: all 0.5s;
+}
+.nav-enter-from,
+.nav-leave-to {
+    opacity: 0;
+    // height: 0px;
+}
+.nav-leave,
+.nav-enter-to {
+    opacity: 1;
+}
+
+.navdrop-enter-active,
+.navdrop-leave-active {
+    transition: all 0.5s;
+}
+.navdrop-enter-from,
+.navdrop-leave-to {
+    opacity: 0;
+    height: 0px;
+}
+.navdrop-leave,
+.navdrop-enter-to {
+    opacity: 1;
+    height: 100%;
+}
