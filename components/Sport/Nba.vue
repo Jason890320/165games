@@ -33,10 +33,10 @@ function Jumpto(location) {
                 <h1 class="text-3xl font-bold">《雷神之錘》老虎機玩法規則說明</h1>
                 <h1 class="text-2xl font-bold text-main indent-8">玩法1 : 隨處支付規則與倍數特色  </h1>
                 <div class="flex space-x-4 py-4">
-                    <img class="object-cover" src="image/property6.png" alt="">
-                    <img class="object-cover" src="image/property2.png" alt="">
-                    <img class="object-cover" src="image/property10.png" alt="">
-                    <img class="object-cover" src="image/property9.png" alt="">
+                    <img class="object-cover" src="/image/property6.png" alt="">
+                    <img class="object-cover" src="/image/property2.png" alt="">
+                    <img class="object-cover" src="/image/property10.png" alt="">
+                    <img class="object-cover" src="/image/property9.png" alt="">
                 </div>
                 <ul class="list-disc list-inside space-y-2 indent-6">
                     <li>版面只要出現倍數符號，<span class="text-main">即可獲得2倍到500倍</span> 的隨機倍數。</li>
