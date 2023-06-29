@@ -48,8 +48,8 @@
                 <button  class="p-2 text-white no-underline group-hover:text-black group-hover:bg-white rounded-md duration-300">電子遊戲</button>
                 <transition name="navbtn" mode="out-in">
                     <div v-if="gamesDrop" class="absolute text-center text-sm pt-3 top-10 w-[150px] page">
-                        <NuxtLink to="/games" class="bg-white hover:bg-orange-400 py-3 px-4 block whitespace-nowrap">gmae1</NuxtLink>
-                        <NuxtLink to="/" class="bg-white hover:bg-orange-400 py-3 px-4 block whitespace-nowrap">gmae2</NuxtLink>
+                        <NuxtLink to="/games/thor" class="bg-white hover:bg-orange-400 py-3 px-4 block whitespace-nowrap">gmae1</NuxtLink>
+                        <NuxtLink to="/games/thor" class="bg-white hover:bg-orange-400 py-3 px-4 block whitespace-nowrap">gmae2</NuxtLink>
                     </div>
                 </transition>
             </div> 
@@ -57,12 +57,12 @@
                 <button  class="p-2 text-white no-underline group-hover:text-black group-hover:bg-white rounded-md duration-300">運動賽事表</button>
                 <transition name="navbtn" mode="out-in">
                     <div v-if="newsDrop" class="absolute text-center text-sm pt-3 top-10 w-[150px] page">
-                        <NuxtLink to="/sports" class="bg-white hover:bg-orange-400 py-3 px-4 block whitespace-nowrap">sport1</NuxtLink>
-                        <NuxtLink to="/" class="bg-white hover:bg-orange-400 py-3 px-4 block whitespace-nowrap">sport2</NuxtLink>
+                        <NuxtLink to="/Sports/nba" class="bg-white hover:bg-orange-400 py-3 px-4 block whitespace-nowrap">sport1</NuxtLink>
+                        <NuxtLink to="/Sports/nba" class="bg-white hover:bg-orange-400 py-3 px-4 block whitespace-nowrap">sport2</NuxtLink>
                     </div>
                 </transition>
             </div> 
-            <NuxtLink to="/antiscam" class="p-2 text-white no-underline hover:text-black hover:bg-white rounded-md">娛樂城反詐騙</NuxtLink>
+            <NuxtLink to="/anti-fraud" class="p-2 text-white no-underline hover:text-black hover:bg-white rounded-md">娛樂城反詐騙</NuxtLink>
         </div>
         <div @click="opennav()" class="md:hidden pr-2">
             <svg class="text-2xl fill-white" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
@@ -78,12 +78,12 @@
             </div>
                 <transition name="navdrop" mode="out-in">
                     <div v-if="gamesbtn" :class="[gamesbtn ? 'w-full bg-white flex flex-col items-start justify-start px-10' : 'hidden']">
-                        <NuxtLink to="/games" @click="opennav" class="w-full py-2 hover:text-main cursor-pointer">gmae1</NuxtLink>
-                        <NuxtLink to="/games" @click="opennav" class="w-full py-2 hover:text-main cursor-pointer">gmae2</NuxtLink>
-                        <NuxtLink to="/games" @click="opennav" class="w-full py-2 hover:text-main cursor-pointer">gmae1</NuxtLink>
-                        <NuxtLink to="/games" @click="opennav" class="w-full py-2 hover:text-main cursor-pointer">gmae2</NuxtLink>
-                        <NuxtLink to="/games" @click="opennav" class="w-full py-2 hover:text-main cursor-pointer">gmae1</NuxtLink>
-                        <NuxtLink to="/games" @click="opennav" class="w-full py-2 hover:text-main cursor-pointer">gmae2</NuxtLink>
+                        <NuxtLink to="/games/thor" @click="opennav" class="w-full py-2 hover:text-main cursor-pointer">gmae1</NuxtLink>
+                        <NuxtLink to="/games/thor" @click="opennav" class="w-full py-2 hover:text-main cursor-pointer">gmae2</NuxtLink>
+                        <NuxtLink to="/games/thor" @click="opennav" class="w-full py-2 hover:text-main cursor-pointer">gmae1</NuxtLink>
+                        <NuxtLink to="/games/thor" @click="opennav" class="w-full py-2 hover:text-main cursor-pointer">gmae2</NuxtLink>
+                        <NuxtLink to="/games/thor" @click="opennav" class="w-full py-2 hover:text-main cursor-pointer">gmae1</NuxtLink>
+                        <NuxtLink to="/games/thor" @click="opennav" class="w-full py-2 hover:text-main cursor-pointer">gmae2</NuxtLink>
                     </div>
                 </transition>
             <div @click="navbtnDrop('sports')" :class="[sportsbtn ? 'text-main' : '']" class="w-full text-center p-3 border-b border-gray-400 cursor-pointer relative">運動賽事表
@@ -91,8 +91,8 @@
             </div>
                 <transition name="navdrop" mode="out-in">
                     <div v-if="sportsbtn" :class="[sportsbtn ? 'w-full bg-white flex flex-col items-start justify-start px-10' : 'hidden']">
-                        <NuxtLink to="/sports" @click="opennav" class="w-full py-2 hover:text-main cursor-pointer">sport1</NuxtLink>
-                        <NuxtLink to="/sports" @click="opennav" class="w-full py-2 hover:text-main cursor-pointer">sport2</NuxtLink>
+                        <NuxtLink to="/Sports/nba" @click="opennav" class="w-full py-2 hover:text-main cursor-pointer">sport1</NuxtLink>
+                        <NuxtLink to="/Sports/nba" @click="opennav" class="w-full py-2 hover:text-main cursor-pointer">sport2</NuxtLink>
                     </div>
                 </transition>
             <div class="w-full flex justify-center text-center">
