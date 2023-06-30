@@ -1,7 +1,8 @@
 <script setup>
 
 function handjump(id){
-    document.getElementById(`${id}`).scrollIntoView({ behavior: 'smooth', block: 'center' })
+    var top = document.getElementById(id).offsetTop- 85;
+    window.scrollTo({ top: top, behavior: 'smooth'});
 }
 
 </script>
@@ -34,6 +35,9 @@ function handjump(id){
                     </div>
                 </template>
             </ArticleContent>
+            <ArticleRank id="3">
+                <template v-slot:title>娛樂城下注賠率評價:該怎麼下最划算?</template>
+            </ArticleRank>
         </template>
     </ArticleTemp>
 </template>
