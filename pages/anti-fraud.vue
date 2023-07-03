@@ -1,4 +1,20 @@
 <script setup>
+// useHead({
+//  title: "娛樂城反詐騙 - 165娛樂城評價",
+//  meta: [
+//    { property: "og:title", content: "關於我們 About - Nuxt3 高效入門全攻略" },
+//    { property: "og:url", content: "http://localhost:3000/about" },
+//    { property: "og:image", content: "http://localhost:3000/share.jpg" },
+//    { name: "description", content: "關於我們 About - 最棒的Nuxt3的線上課程" },
+//    { property: "og:description", content: "關於我們 About - 最棒的Nuxt3的線上課程" },
+//  ],
+// });
+useSeoMeta({
+ title: "娛樂城反詐騙 - 165娛樂城評價",
+ description: "娛樂城反詐騙 - 165娛樂城評價",
+ ogDescription: "娛樂城反詐騙 - 165娛樂城評價",
+ ogTitle: "娛樂城反詐騙 - 165娛樂城評價",
+});
 
 function handjump(id){
     var top = document.getElementById(id).offsetTop- 85;
