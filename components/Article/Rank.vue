@@ -16,19 +16,19 @@ const rankdata = reactive([
         <div class="mx-2 md:mx-6">
             <img class="w-full h-full object-cover rounded-xl my-4" src="/image/sport.webp" alt="">
             <div v-for="i in rankdata" :key="i" class="w-full py-2 group relative">
-                <h1 class="text-xl lg:text-2xl font-bold text-gray-500 group-hover:text-main">NO.{{ i.rank }} {{ i.name }}:</h1>
-                <p class="leading-loose text-justify text-[#a9a9a9] group-hover:text-black">{{ i.content }}</p>
+                <h1 class="text-xl lg:text-2xl font-bold text-gray-500 group-hover:text-main duration-300">NO.{{ i.rank }} {{ i.name }}:</h1>
+                <p class="leading-loose text-justify text-[#a9a9a9] group-hover:text-black duration-300">{{ i.content }}</p>
                 <div class="flex justify-end text-white group-hover:cursor-pointer select-none mt-2 md:mt-0">
-                    <div class="w-6 h-6 bg-gray-500 group-hover:bg-main rounded-full text-center">
+                    <div class="w-6 h-6 bg-gray-500 group-hover:bg-main rounded-full text-center duration-300">
                         <span>出</span>
                     </div>
-                    <div class="w-6 h-6 bg-gray-500 group-hover:bg-main rounded-full text-center">
+                    <div class="w-6 h-6 bg-gray-500 group-hover:bg-main rounded-full text-center duration-300">
                         <span>發</span>
                     </div>
-                    <div class="w-6 h-6 bg-gray-500 group-hover:bg-main rounded-full text-center">
+                    <div class="w-6 h-6 bg-gray-500 group-hover:bg-main rounded-full text-center duration-300">
                         <span>前</span>
                     </div>
-                    <div class="w-6 h-6 bg-gray-500 group-hover:bg-main rounded-full text-center">
+                    <div class="w-6 h-6 bg-gray-500 group-hover:bg-main rounded-full text-center duration-300">
                         <span>往</span>
                     </div>
                 </div>

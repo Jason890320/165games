@@ -81,8 +81,8 @@ function handclose() {
                 </div>
             </div>
             <div class="space-x-4">
-                <button class="bg-main rounded-xl px-6">立即註冊</button>
-                <button @click="openinfo()" class="bg-main rounded-xl px-6">更多評價</button>
+                <button class="bg-main rounded-xl px-6 hover:ring hover:ring-[#FF7744] ring-offset-2 duration-300">立即註冊</button>
+                <button @click="openinfo()" class="bg-main rounded-xl px-6 hover:ring hover:ring-[#FF7744] ring-offset-2 duration-300">更多評價</button>
             </div>
             <p class="line-clamp-4 overflow-hidden" v-html="nowGame[0].content"></p>
         </div>

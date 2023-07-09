@@ -17,7 +17,7 @@ const gamedata = reactive([
             <h3 class="text-3xl font-bold">{{ i.title }}</h3>
             <p class="text-gray-400">{{ i.content }}</p>
             <div :class="[i.sort ?'justify-start' :'justify-end']" class="flex max-[768px]:justify-end">
-                <button class="bg-main text-white rounded-xl px-8 py-0.5">更多資訊</button>
+                <button class="bg-main text-white rounded-xl px-8 py-0.5 hover:scale-125 hover:bg-orange-400 transition ease-in-out duration-300">更多資訊</button>
             </div>
         </div>
     </div>

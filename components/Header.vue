@@ -69,7 +69,7 @@
         </div>
     </div>
     <transition name="nav" mode="out-in">
-        <div v-if="nav" class="fixed top-[60px] z-50 w-screen max-h-[400px] bg-white flex flex-col items-start justify-start px-3 py-2 overflow-y-scroll">
+        <div v-if="nav" class="fixed top-[60px] z-50 w-screen max-h-[400px] bg-white shadow-xl flex flex-col items-start justify-start px-3 py-2 overflow-y-scroll">
             <div class="w-full flex justify-center text-center">
                 <NuxtLink to="/" @click="opennav" class="w-full p-3 border-b border-gray-400 hover:text-main">首頁</NuxtLink>
             </div>

@@ -12,7 +12,7 @@ const data = reactive([
         <div v-for="i in data" :key="i.id" class="row-span-1 md:col-span-1">
             <div class="flex flex-col items-center">
                 <div class="relative mb-4 group hover:cursor-pointer">
-                    <img class="w-full max-h-[250px] object-cover group-hover:opacity-80" :src="i.image" alt="">
+                    <img class="w-full max-h-[250px] object-cover group-hover:opacity-80 duration-300" :src="i.image" alt="">
                     <div class="bg-main absolute top-3 left-2 text-white text-sm rounded-xl px-2 invisible group-hover:visible">更多資訊</div>
                 </div>
                 <span class="line-clamp-1">{{ i.title }}</span>
