@@ -1,4 +1,10 @@
 <script setup>
+useSeoMeta({
+ title: "雷神之槌 - 165娛樂城評價",
+ description: "雷神之槌 - 165娛樂城評價",
+ ogDescription: "雷神之槌 - 165娛樂城評價",
+ ogTitle: "雷神之槌 - 165娛樂城評價",
+});
 
 function handjump(id){
     var top = document.getElementById(id).offsetTop- 85;

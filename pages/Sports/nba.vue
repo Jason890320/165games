@@ -1,4 +1,10 @@
 <script setup>
+useSeoMeta({
+ title: "NBA運動賽事表 - 165娛樂城評價",
+ description: "NBA運動賽事表 - 165娛樂城評價",
+ ogDescription: "NBA運動賽事表 - 165娛樂城評價",
+ ogTitle: "NBA運動賽事表 - 165娛樂城評價",
+});
 
 function handjump(id){
     var top = document.getElementById(id).offsetTop- 85;
