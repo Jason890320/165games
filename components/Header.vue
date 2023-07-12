@@ -96,7 +96,7 @@
                     </div>
                 </transition>
             <div class="w-full flex justify-center text-center">
-                <NuxtLink to="/antiscam" @click="opennav" class="w-full p-3 border-b border-gray-400 hover:text-main">娛樂城反詐騙</NuxtLink>
+                <NuxtLink to="/anti-fraud" @click="opennav" class="w-full p-3 border-b border-gray-400 hover:text-main">娛樂城反詐騙</NuxtLink>
             </div>
         </div>
     </transition>
