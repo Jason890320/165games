@@ -9,13 +9,13 @@ const gamedata = reactive([
 </script>
 
 <template>
-    <div v-for="i in gamedata" :key="i.id" :class="[i.sort ?'flex-row-reverse' :'flex-row']" class="md:flex md:justify-between py-4 border-b border-gray-400">
+    <div v-for="i in gamedata" :key="i.id" :class="[i.sort ?'flex-row-reverse' :'flex-row']" class="md:flex md:justify-between py-4 border-b border-gray-400 group hover:py-8 duration-300 hover:cursor-pointer">
         <div class="md:w-[400px] md:h-[250px]">
             <img class="w-full h-full object-cover rounded-xl" :src="i.image" alt="">
         </div>
         <div class="w-full flex flex-col justify-between space-y-4 py-4 md:px-8 md:py-2">
             <h3 class="text-3xl font-bold">{{ i.title }}</h3>
-            <p class="text-gray-400">{{ i.content }}</p>
+            <p class="text-gray-400 group-hover:text-main">{{ i.content }}</p>
             <div :class="[i.sort ?'justify-start' :'justify-end']" class="flex max-[768px]:justify-end">
                 <button class="bg-main text-white rounded-xl px-8 py-0.5 hover:scale-125 hover:bg-orange-400 transition ease-in-out duration-300">更多資訊</button>
             </div>

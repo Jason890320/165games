@@ -9,7 +9,6 @@ const emit = defineEmits(["close"]);
 const loading = ref(true);
 
 onMounted(()=>{
-    console.log(props.data, 'prop');
     loading.value = false;
 })
 
@@ -41,24 +40,25 @@ function clickclose(e){
                 <img class="w-full h-full object-cover" :src="props.data.info.banner" alt="">
             </div>
             <div class="py-4 md:w-full flex flex-wrap md:flex-row justify-between">
-                <HomeInfo_Circle :value="props.data.info.draw">
+                <HomeInfo_Circle :value="props.data.info.draw" :unit="'秒'">
                     <template v-slot:title>出金速度</template>
-                    <template v-slot:descr>{{props.data.info.draw}}秒</template>
+                    <!-- <template v-slot:descr><span :style="`content: counter(${props.data.info.draw}) '秒';`">{{props.data.info.draw}}</span></template> -->
+                    <!-- <template v-slot:descr>{{props.data.info.draw}}秒</template> -->
                 </HomeInfo_Circle>
-                <HomeInfo_Circle :value="props.data.info.safe">
+                <HomeInfo_Circle :value="props.data.info.safe" :unit="'%'">
                     <template v-slot:title>安全指數</template>
-                    <template v-slot:descr>{{props.data.info.safe}}%</template>
+                    <!-- <template v-slot:descr>{{props.data.info.safe}}%</template> -->
                 </HomeInfo_Circle>
-                <HomeInfo_Circle :value="props.data.info.Welfare">
+                <HomeInfo_Circle :value="props.data.info.Welfare" :unit="'分'">
                     <template v-slot:title>遊戲福利</template>
-                    <template v-slot:descr>{{props.data.info.Welfare}}分</template>
+                    <!-- <template v-slot:descr>{{props.data.info.Welfare}}分</template> -->
                 </HomeInfo_Circle>
-                <HomeInfo_Circle :value="props.data.info.store">
+                <HomeInfo_Circle :value="props.data.info.store" :unit="'秒'">
                     <template v-slot:title>存款速度</template>
-                    <template v-slot:descr>{{props.data.info.store}}秒</template>
+                    <!-- <template v-slot:descr>{{props.data.info.store}}秒</template> -->
                 </HomeInfo_Circle>
             </div>
-            <p class="leading-loose text-neutral-100 py-4">{{ props.data.content }}</p>
+            <p class="leading-loose text-neutral-100 py-4 mt-6">{{ props.data.content }}</p>
             <div class="w-full grid grid-row-2 md:grid-cols-2 gap-4">
                 <div class="row-span-1 md:col-span-1 bg-white flex flex-col px-4 py-2 text-main font-semibold space-y-1">
                     <span>娛樂城品牌資訊:</span>
