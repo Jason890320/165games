@@ -1,6 +1,6 @@
 <template>
-    <div class="w-full overflow-hidden">
-        <Header/>
+    <div>
+        <Header />
         <div>
             <slot/>
         </div>  
